@@ -10,7 +10,7 @@ main {
   
   .main__title {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
   }
   
   .main__title > img {
@@ -43,7 +43,7 @@ main {
     flex-direction: column;
     justify-content: space-around;
     height: 70px;
-    padding: 25px;
+    padding: 35px;
     border-radius: 5px;
     background: #ffffff;
     box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #ffffff;
@@ -56,8 +56,9 @@ main {
   }
   
   .card_inner > span {
-    font-size: 25px;
-    width: 80px;
+    /* font-size: 25px; */
+    width: 70px;
+    height: 90px;
   }
   #customers {
     font-family: Arial, Helvetica, sans-serif;
@@ -69,7 +70,7 @@ main {
     padding: 8px;
   }
  
-  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  /* #customers tr:nth-child(even){background-color: #f2f2f2;} */
   
   #customers tr:hover {background-color: #ddd;}
   
@@ -209,13 +210,20 @@ main {
   
   @media only screen and (max-width: 855px) {
     .main__cards {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(3,1fr);
       gap: 10px;
       margin-bottom: 0;
     }
-  
+    .second{
+    padding: 40px;
+    margin-left: 300px;
+    }
     .charts {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(2,1fr);
+      margin-top: 30px;
+    }
+    .second-chart{
+      grid-template-columns:  repeat(2,1fr);
       margin-top: 30px;
     }
   }

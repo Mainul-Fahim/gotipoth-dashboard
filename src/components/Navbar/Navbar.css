@@ -34,8 +34,8 @@
   
   .navbar__right {
     display: flex;
-    justify-content: center;
-    align-items: center;
+   justify-content: flex-end;
+  
   }
   
   .navbar__right > a {

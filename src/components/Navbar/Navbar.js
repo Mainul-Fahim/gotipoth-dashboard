@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Navbar.css";
-import avatar from "../../assets/avatar.svg";
+import avatar from "../../assets/me-01.png";
 
 const Navbar = ({ sidebarOpen, openSidebar }) => {
     return (
@@ -9,16 +9,12 @@ const Navbar = ({ sidebarOpen, openSidebar }) => {
                 <i className="fa fa-bars" aria-hidden="true"></i>
             </div>
             <div className="navbar__left">
-                <a href="#">Subscribers</a>
-                <a href="#">Video Management</a>
-                <a className="active_link" href="#">
-                    Admin
-                </a>
-            </div>
-            <div className="navbar__right">
                 <a href="#">
                     <i className="fa fa-search" aria-hidden="true"></i>
                 </a>
+            </div>
+            <div className="navbar__right">
+
                 <a href="#">
                     <i className="fa fa-clock-o" aria-hidden="true"></i>
                 </a>

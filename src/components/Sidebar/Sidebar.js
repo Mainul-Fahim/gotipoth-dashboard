@@ -1,14 +1,14 @@
 import React from 'react';
 import "./Sidebar.css";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/me-01.png";
 
 const Sidebar = ({ sidebarOpen, closeSidebar }) => {
     return (
         <div className={sidebarOpen ? "sidebar_responsive" : ""} id="sidebar">
       <div className="sidebar__title">
         <div className="sidebar__img">
-          <img src={logo} alt="logo" />
-          <h1>Admin</h1>
+          <img height="40" width="30" src={logo} alt="logo" />
+          <h1> Admin</h1>
         </div>
         <i
           onClick={() => closeSidebar()}
