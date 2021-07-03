@@ -10,7 +10,7 @@ import Line3 from "../../assets/line3.png";
 import Line4 from "../../assets/line4.png";
 import Line from "../../assets/line.png";
 import MapChart from "../Charts/MapChart";
-import DoughnutChart from "../Main/DoughnutChart";
+import DoughnutChart from "../Charts/DoughnutChart";
 
 const Main = () => {
     return (
